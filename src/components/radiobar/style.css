@@ -1,0 +1,27 @@
+.filter-btns-container {
+  width: 100%;
+  padding: 10px 24px;
+  display: flex;
+  justify-content: flex-end;
+  transition: all 0.4s ease-in-out;
+  background-color: var(--gray-dark-bg);
+}
+.filter-radio-btn-label {
+  font-size: 16px;
+  color: var(--indigo);
+}
+/* .ant-radio-checked .ant-radio-inner{
+    border-color: red !important ;
+  } */
+  
+  .ant-radio-checked .ant-radio-inner:after{
+    background-color: #004225;
+  }
+  
+  .ant-radio:hover .ant-radio-inner {
+    border-color: red ;
+    background-color: #E4D0D0;
+  }
+  
+ 
+  

@@ -1,0 +1,71 @@
+.search-bar-container {
+  padding: 12px 24px;
+  background-color: var(--dark);
+}
+.search-col {
+}
+.filter-col {
+}
+.input-search-container {
+  max-width: 300px;
+  width: 300px;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+}
+.input-search-field {
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  padding: 10px 20px;
+  outline: transparent;
+  border: transparent;
+  border-radius: 24px;
+  background-color: var(--gray-dark-bg);
+  border: 2px solid var(--gray-light);
+  color: var(--gray-light);
+}
+.input-search-container::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f002";
+  position: absolute;
+  font-size: 18px;
+  top: 1rem;
+  right: 1rem;
+  color: #ccc;
+}
+.search-bar-btns-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.form-btn,
+.filter-btn {
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  border-radius: 50%;
+  background-color: transparent;
+  outline: none;
+  border: transparent;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.filter-btn {
+  color: var(--green-text);
+}
+.filter-btn:hover {
+  text-shadow: var(--green-light-bg) 0px 7px 29px 0px;
+  text-shadow: 6px 0px 10px var(--green-light-bg),
+    -5px 0px 9px var(--green-light-bg), 0px 6px 9px var(--green-light-bg);
+}
+.form-btn {
+  color: var(--blue-text);
+}
+.form-btn:hover {
+  text-shadow: 6px 0px 10px var(--blue-light-bg),
+    -3px 0px 9px var(--blue-light-bg), 0px 6px 9px var(--blue-light-bg);
+}

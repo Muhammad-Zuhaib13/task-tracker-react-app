@@ -1,0 +1,127 @@
+:root {
+  --blue: #5e50f9;
+  --indigo: #6610f2;
+  --purple: #6a008a;
+  --pink: #e91e63;
+  --orange: #f2a654;
+  --yellow: #f6e84e;
+  --green-text: #00d25b;
+  --teal: #58d8a3;
+  --cyan: #57c7d4;
+  --white: #ffffff;
+  --gray-text: #6c7293;
+  --gray: #6c757d;
+  --gray-dark: #12151e;
+  --gray-dark-bg: #191c24;
+  --blue: #5e50f9;
+  --indigo: #6610f2;
+  --indigo-light-bg: #824add;
+  --indigo-dark: #4a0eaa;
+  --blue-text: #0090e7;
+  --green-text: #00d25b;
+  --red-text: #fc424a;
+  --orange-text: #ffab00;
+  --purple-text: #8f5fe8;
+  --blue-light-bg: rgba(0, 144, 231, 0.2);
+  --green-light-bg: rgba(0, 210, 91, 0.2);
+  --red-light-bg: rgba(252, 66, 74, 0.2);
+  --orange-light-bg: rgba(255, 171, 0, 0.2);
+  --purple-light-bg: rgba(143, 95, 232, 0.2);
+  --purple: #6a008a;
+  --pink: #e91e63;
+  --red: #e72727;
+  --red-bg: rgba(252, 66, 74, 0.11);
+  --green-bg: rgba(0, 210, 91, 0.11);
+  --orange: #f2a654;
+  --yellow: #f6e84e;
+  --green: #46c35f;
+  --teal: #58d8a3;
+  --cyan: #57c7d4;
+  --white: #ffffff;
+  --gray: #434a54;
+  --gray-light: #aab2bd;
+  --gray-lighter: #e8eff4;
+  --gray-lightest: #e6e9ed;
+  --black: #000000;
+  --light-bg: rgba(108, 114, 147, 0.2);
+  --primary: #0090e7;
+  --secondary: #e4eaec;
+  --success: #00d25b;
+  --info: #8f5fe8;
+  --warning: #ffab00;
+  --danger: #fc424a;
+  --light: #ffffff;
+  --dark: #0d0d0d;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+  background-color: var(--dark);
+}
+@keyframes square-in-hesitate {
+  0% {
+    clip-path: inset(100% 100% 100% 100%);
+  }
+  40% {
+    clip-path: inset(33% 33% 33% 33%);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.square-animation {
+  animation: 1s cubic-bezier(0.25, 1, 0.3, 1) square-in-hesitate both;
+}
+@keyframes wipe-in-top-right {
+  from {
+    clip-path: polygon(-50% 50%, 50% 150%, 50% 150%, -50% 50%);
+  }
+  to {
+    clip-path: polygon(50% -50%, 150% 50%, 50% 150%, -50% 50%);
+  }
+}
+
+[transition-style="in:wipe:top-right"] {
+  animation: 1s ease-in-out wipe-in-top-right both;
+}
+.wipe-animation {
+  transition: all 0.5s ease-in-out;
+  animation: 2.5s ease-in-out wipe-in-top-right both;
+}
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.heading-container-topbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+}
+.heading-container-topbar h1 {
+  font-size: 28px;
+  color: #ccc;
+}
+.logo-img {
+  width: 200px;
+  height: 50px;
+}
+.logo-img img {
+  width: 100%;
+  height: 100%;
+}
+.header-section {
+}
+.main-section {
+  width: 100%;
+  /* height: 100vh; */
+  /* background-color: #CBE4DE; */
+}
+.footer-section {
+}
